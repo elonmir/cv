@@ -10,10 +10,34 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'),
   title: 'Markus Reisenhofer — CV',
   description:
     'Curriculum Vitae of Markus Reisenhofer, Technical Team Lead & Senior Full-Stack Engineer.',
   generator: 'v0.app',
+  openGraph: {
+    title: 'Markus Reisenhofer — CV',
+    description:
+      'Curriculum Vitae of Markus Reisenhofer, Technical Team Lead & Senior Full-Stack Engineer.',
+    url: '/',
+    siteName: 'Markus Reisenhofer CV',
+    type: 'profile',
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Markus Reisenhofer CV preview image',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Markus Reisenhofer — CV',
+    description:
+      'Curriculum Vitae of Markus Reisenhofer, Technical Team Lead & Senior Full-Stack Engineer.',
+    images: ['/opengraph-image'],
+  },
   icons: {
     icon: [
       {
