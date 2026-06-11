@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 import type { Basics } from "@/lib/cv-types"
 import { Mail, MapPin, Cake, Link as LinkIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -28,34 +28,26 @@ function initials(name: string) {
 }
 
 export function CVHeader({ basics }: { basics: Basics }) {
-  const sentinelRef = useRef<HTMLDivElement>(null)
   const [isStuck, setIsStuck] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    const sentinel = sentinelRef.current
-    if (!sentinel) return
+    const media = window.matchMedia("(max-width: 639px)")
+    const updateMobile = () => setIsMobile(media.matches)
+    updateMobile()
+    media.addEventListener("change", updateMobile)
+    return () => media.removeEventListener("change", updateMobile)
+  }, [])
 
-    // Hysteresis dead-zone: use two different scroll thresholds for entering
-    // and leaving the stuck state. Because collapsing the header changes the
-    // page height (which the browser may nudge the scroll for), a single
-    // boundary line causes rapid toggling/flicker — especially on mobile where
-    // the address bar also resizes the viewport. The gap between ENTER and EXIT
-    // absorbs that jitter so the state can't oscillate.
-    const ENTER = 16
-    const EXIT = 4
+  useEffect(() => {
+    // A small positive threshold avoids false-positives from sub-pixel
+    // scroll adjustments the browser makes when the sticky header changes height.
+    const THRESHOLD = 10
     let ticking = false
 
     const update = () => {
       ticking = false
-      // Sentinel sits in normal flow above the sticky header, so its top
-      // relative to the viewport is a stable measure of scroll progress
-      // independent of the header's (changing) height.
-      const top = sentinel.getBoundingClientRect().top
-      setIsStuck((prev) => {
-        if (!prev && top <= -ENTER) return true
-        if (prev && top >= -EXIT) return false
-        return prev
-      })
+      setIsStuck(window.scrollY > THRESHOLD)
     }
 
     const onScroll = () => {
@@ -73,9 +65,10 @@ export function CVHeader({ basics }: { basics: Basics }) {
     }
   }, [])
 
+  const isCompact = isStuck && !isMobile
+
   return (
     <>
-      <div ref={sentinelRef} aria-hidden="true" className="h-px w-full" />
       <header
         className={cn(
         "sticky top-0 z-30 overflow-hidden border border-border bg-card/95 shadow-sm backdrop-blur transition-all duration-200 supports-[backdrop-filter]:bg-card/80 print:static print:rounded-3xl print:bg-card print:p-10",
