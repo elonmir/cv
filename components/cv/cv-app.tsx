@@ -44,11 +44,6 @@ export function CVApp({ data }: { data: Record<Locale, CVData> }) {
         <EducationList items={cv.education} />
       </Section>
     ) : null,
-    cv.volunteering?.length ? (
-      <Section key="volunteering" title={t.volunteering} icon={HandHeart}>
-        <EducationList items={cv.volunteering} />
-      </Section>
-    ) : null,
     cv.languages?.length ? (
       <Section key="languages" title={t.languages} icon={Languages}>
         <LanguageList items={cv.languages} />
@@ -58,6 +53,11 @@ export function CVApp({ data }: { data: Record<Locale, CVData> }) {
       <Section key="hobbies" title={t.hobbies} icon={Heart}>
         <HobbyList items={cv.hobbies} />
       </Section>
+    ) : null,
+    cv.volunteering?.length ? (
+        <Section key="volunteering" title={t.volunteering} icon={HandHeart}>
+          <EducationList items={cv.volunteering} />
+        </Section>
     ) : null,
   ].filter(Boolean)
 
