@@ -1,0 +1,112 @@
+{
+  "ui": {
+    "experience": "Work Experience",
+    "skills": "Skills",
+    "contact": "Contact",
+    "education": "Education"
+  },
+  "basics": {
+    "name": "Jane Developer",
+    "title": "Senior Software Engineer",
+    "photo": "/images/jane.jpg",
+    "summary": "Experienced software engineer specializing in cloud-native applications, distributed systems and team mentoring.",
+    "email": "jane.developer@example.com",
+    "birth": "1 January 1990",
+    "showBirth": false,
+    "location": "Germany",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/janedeveloper"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://linkedin.com/in/janedeveloper"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Example Tech GmbH",
+      "position": "Engineering Manager",
+      "start": "01 / 2023",
+      "end": "present",
+      "description": [
+        "Led a team of 10 engineers.",
+        "Introduced cloud-native architecture.",
+        "Reduced infrastructure costs by 30%."
+      ]
+    },
+    {
+      "company": "Cloud Solutions AG",
+      "position": "Senior Backend Developer",
+      "start": "06 / 2019",
+      "end": "12 / 2022",
+      "description": [
+        "Developed microservices using Go and Kubernetes.",
+        "Implemented CI/CD pipelines.",
+        "Designed event-driven systems."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Technical University of Munich",
+      "detail": "M.Sc. Computer Science",
+      "start": "2012",
+      "end": "2014"
+    }
+  ],
+  "volunteering": [
+    {
+      "institution": "Open Source Initiative",
+      "detail": "Volunteer Maintainer",
+      "start": "2020",
+      "end": "present"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Kubernetes",
+      "level": 5,
+      "description": "Production-grade cluster operations and GitOps workflows."
+    },
+    {
+      "name": "Go",
+      "level": 4,
+      "description": "Backend APIs, microservices and tooling."
+    },
+    {
+      "name": "AWS",
+      "level": 4,
+      "description": "Infrastructure and serverless architectures."
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "level": "C2"
+    },
+    {
+      "name": "German",
+      "level": "B2"
+    }
+  ],
+  "hobbies": [
+    {
+      "name": "Cycling",
+      "description": "Long-distance road cycling and bikepacking."
+    },
+    {
+      "name": "Photography",
+      "description": "Landscape and travel photography."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "An exceptional engineer and mentor.",
+      "author": "John Smith",
+      "role": "CTO, Example Tech GmbH"
+    }
+  ]
+}

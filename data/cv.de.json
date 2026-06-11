@@ -1,0 +1,112 @@
+{
+  "ui": {
+    "experience": "Berufserfahrung",
+    "skills": "Fähigkeiten",
+    "contact": "Kontakt",
+    "education": "Ausbildung"
+  },
+  "basics": {
+    "name": "Max Mustermann",
+    "title": "Senior Softwareentwickler",
+    "photo": "/images/max.jpg",
+    "summary": "Erfahrener Softwareentwickler mit Schwerpunkt auf Cloud-nativen Anwendungen, verteilten Systemen und der fachlichen Begleitung von Entwicklungsteams.",
+    "email": "max.mustermann@example.com",
+    "birth": "1. Januar 1990",
+    "showBirth": false,
+    "location": "Deutschland",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/maxmustermann"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://linkedin.com/in/maxmustermann"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Beispiel Tech GmbH",
+      "position": "Engineering Manager",
+      "start": "01 / 2023",
+      "end": "heute",
+      "description": [
+        "Leitete ein Team aus 10 Entwickler:innen.",
+        "Führte eine Cloud-native Architektur ein.",
+        "Reduzierte Infrastrukturkosten um 30 %."
+      ]
+    },
+    {
+      "company": "Cloud Solutions AG",
+      "position": "Senior Backend-Entwickler",
+      "start": "06 / 2019",
+      "end": "12 / 2022",
+      "description": [
+        "Entwickelte Microservices mit Go und Kubernetes.",
+        "Implementierte CI/CD-Pipelines.",
+        "Entwarf eventgetriebene Systeme."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Technische Universität München",
+      "detail": "Master of Science Informatik",
+      "start": "2012",
+      "end": "2014"
+    }
+  ],
+  "volunteering": [
+    {
+      "institution": "Open Source Initiative",
+      "detail": "Ehrenamtlicher Maintainer",
+      "start": "2020",
+      "end": "heute"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Kubernetes",
+      "level": 5,
+      "description": "Betrieb produktiver Cluster und GitOps-basierte Deployments."
+    },
+    {
+      "name": "Go",
+      "level": 4,
+      "description": "Entwicklung von Backend-APIs, Microservices und Tools."
+    },
+    {
+      "name": "AWS",
+      "level": 4,
+      "description": "Cloud-Infrastruktur und Serverless-Architekturen."
+    }
+  ],
+  "languages": [
+    {
+      "name": "Deutsch",
+      "level": "Muttersprache"
+    },
+    {
+      "name": "Englisch",
+      "level": "C1"
+    }
+  ],
+  "hobbies": [
+    {
+      "name": "Radfahren",
+      "description": "Langstrecken-Radtouren und Bikepacking."
+    },
+    {
+      "name": "Fotografie",
+      "description": "Landschafts- und Reisefotografie."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Ein außergewöhnlicher Entwickler und Mentor.",
+      "author": "Johannes Schmidt",
+      "role": "CTO, Beispiel Tech GmbH"
+    }
+  ]
+}
