@@ -8,7 +8,7 @@
   "basics": {
     "name": "Jane Developer",
     "title": "Senior Software Engineer",
-    "photo": "/images/jane.jpg",
+    "photo": "/images/max.png",
     "summary": "Experienced software engineer specializing in cloud-native applications, distributed systems and team mentoring.",
     "email": "jane.developer@example.com",
     "birth": "1 January 1990",

@@ -8,7 +8,7 @@
   "basics": {
     "name": "Max Mustermann",
     "title": "Senior Softwareentwickler",
-    "photo": "/images/max.jpg",
+    "photo": "/images/max.png",
     "summary": "Erfahrener Softwareentwickler mit Schwerpunkt auf Cloud-nativen Anwendungen, verteilten Systemen und der fachlichen Begleitung von Entwicklungsteams.",
     "email": "max.mustermann@example.com",
     "birth": "1. Januar 1990",
