@@ -11,7 +11,13 @@ export interface UILabels {
   testimonials: string
 }
 
+export interface CVMeta {
+  title: string
+  description: string
+}
+
 export interface CVData {
+  meta: CVMeta
   ui: UILabels
   basics: Basics
   experience: ExperienceItem[]

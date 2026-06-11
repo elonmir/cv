@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
+import en from '@/data/cv.en.json'
 import './globals.css'
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
@@ -11,20 +12,18 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'),
-  title: 'Markus Reisenhofer — CV',
-  description:
-    'Curriculum Vitae of Markus Reisenhofer, Technical Team Lead & Senior Full-Stack Engineer.',
+  title: en.meta.title,
+  description: en.meta.description,
   generator: 'v0.app',
   openGraph: {
-    title: 'Markus Reisenhofer — CV',
-    description:
-      'Curriculum Vitae of Markus Reisenhofer, Technical Team Lead & Senior Full-Stack Engineer.',
+    title: en.meta.title,
+    description: en.meta.description,
     url: '/',
     siteName: 'Markus Reisenhofer CV',
     type: 'profile',
     images: [
       {
-        url: '/opengraph-image',
+        url: '/og?lang=en',
         width: 1200,
         height: 630,
         alt: 'Markus Reisenhofer CV preview image',
@@ -33,10 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Markus Reisenhofer — CV',
-    description:
-      'Curriculum Vitae of Markus Reisenhofer, Technical Team Lead & Senior Full-Stack Engineer.',
-    images: ['/opengraph-image'],
+    title: en.meta.title,
+    description: en.meta.description,
+    images: ['/og?lang=en'],
   },
   icons: {
     icon: [
