@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Jane Developer — CV",
+    "description": "Curriculum Vitae of Jane Developer, Experienced software engineer."
+  },
   "ui": {
     "experience": "Work Experience",
     "skills": "Skills",

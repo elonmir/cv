@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Max Mustermann — Lebenslauf",
+    "description": "Lebenslauf von Max Mustermann, technischer Teamleiter und Erfahrener Softwareentwickler."
+  },
   "ui": {
     "experience": "Berufserfahrung",
     "skills": "Fähigkeiten",
