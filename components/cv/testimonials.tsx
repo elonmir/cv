@@ -10,7 +10,7 @@ export function Testimonials({ items }: { items: Testimonial[] }) {
           className="relative flex flex-col gap-4 rounded-2xl border border-border bg-secondary/40 p-5"
         >
           <Quote className="size-6 text-primary" aria-hidden="true" />
-          <blockquote className="text-sm leading-relaxed text-foreground text-pretty">
+          <blockquote className="text-sm leading-relaxed text-foreground text-pretty whitespace-pre-line">
             {item.quote}
           </blockquote>
           <footer className="mt-auto">
