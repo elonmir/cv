@@ -65,8 +65,6 @@ export function CVHeader({ basics }: { basics: Basics }) {
     }
   }, [])
 
-  const isCompact = isStuck && !isMobile
-
   return (
     <>
       <header
