@@ -11,13 +11,7 @@ export interface UILabels {
   testimonials: string
 }
 
-export interface CVMeta {
-  title: string
-  description: string
-}
-
 export interface CVData {
-  meta: CVMeta
   ui: UILabels
   basics: Basics
   experience: ExperienceItem[]
@@ -27,6 +21,22 @@ export interface CVData {
   languages: LanguageItem[]
   hobbies: HobbyItem[]
   testimonials: Testimonial[]
+  imprint: Imprint
+}
+
+export interface ImprintSection {
+  heading: string
+  paragraphs: string[]
+}
+
+export interface Imprint {
+  title: string
+  backToCV: string
+  lastUpdated: string
+  providerHeading: string
+  contactLabel: string
+  emailLabel: string
+  sections: ImprintSection[]
 }
 
 export interface Basics {

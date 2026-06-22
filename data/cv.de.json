@@ -7,7 +7,12 @@
     "experience": "Berufserfahrung",
     "skills": "Fähigkeiten",
     "contact": "Kontakt",
-    "education": "Ausbildung"
+    "education": "Ausbildung",
+    "volunteering": "Ehrenamt",
+    "languages": "Sprachen",
+    "hobbies": "Hobbys",
+    "testimonials": "Empfehlungen",
+    "imprint": "Impressum"
   },
   "basics": {
     "name": "Max Mustermann",
@@ -108,9 +113,47 @@
   ],
   "testimonials": [
     {
-      "quote": "Ein außergewöhnlicher Entwickler und Mentor.",
-      "author": "Johannes Schmidt",
-      "role": "CTO, Beispiel Tech GmbH"
+      "quote": "Markus ist einer dieser seltenen technischen Ansprechpartner, bei denen jedes Gespräch tatsächlich etwas voranbringt. Er kennt seinen Technologie-Stack in- und auswendig und vor allem versteht er, warum er so aufgebaut ist, wie er aufgebaut ist.\nIch arbeite seit dem vergangenen Jahr auf Seiten von Vercel mit ihm zusammen, und was mich immer beeindruckt hat, ist seine Fähigkeit, alltägliche technische Entscheidungen mit einer langfristigen Perspektive auf die Weiterentwicklung der Plattform zu verbinden. Ich kann ihn uneingeschränkt empfehlen.",
+      "author": "Stefan Nikolic",
+      "role": "Account Executive, Vercel"
     }
-  ]
+  ],
+  "imprint": {
+    "title": "Impressum",
+    "backToCV": "Zurück zum Lebenslauf",
+    "lastUpdated": "Zuletzt aktualisiert: Februar 2025",
+    "providerHeading": "Angaben gemäß § 5 TMG",
+    "contactLabel": "Kontakt",
+    "emailLabel": "E-Mail",
+    "sections": [
+      {
+        "heading": "Haftung für Inhalte",
+        "paragraphs": [
+          "Als Diensteanbieter bin ich gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
+          "Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werde ich diese Inhalte umgehend entfernen."
+        ]
+      },
+      {
+        "heading": "Haftung für Links",
+        "paragraphs": [
+          "Diese Seite enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
+          "Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar."
+        ]
+      },
+      {
+        "heading": "Urheberrecht",
+        "paragraphs": [
+          "Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.",
+          "Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet."
+        ]
+      },
+      {
+        "heading": "Datenschutz",
+        "paragraphs": [
+          "Die Nutzung dieser Website ist in der Regel ohne Angabe personenbezogener Daten möglich. Diese Website erhebt, speichert oder verarbeitet keine personenbezogenen Daten über das technisch notwendige Maß zur Auslieferung der Seite hinaus.",
+          "Sofern Sie mich über die angegebene E-Mail-Adresse kontaktieren, werden Ihre Angaben ausschließlich zur Bearbeitung Ihrer Anfrage verwendet und nicht an Dritte weitergegeben."
+        ]
+      }
+    ]
+  }
 }

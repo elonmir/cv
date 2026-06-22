@@ -7,7 +7,12 @@
     "experience": "Work Experience",
     "skills": "Skills",
     "contact": "Contact",
-    "education": "Education"
+    "education": "Education",
+    "volunteering": "Volunteering",
+    "languages": "Languages",
+    "hobbies": "Hobbies",
+    "testimonials": "Testimonials",
+    "imprint": "Imprint"
   },
   "basics": {
     "name": "Jane Developer",
@@ -108,9 +113,47 @@
   ],
   "testimonials": [
     {
-      "quote": "An exceptional engineer and mentor.",
-      "author": "John Smith",
-      "role": "CTO, Example Tech GmbH"
+      "quote": "Markus is one of those rare technical contacts where every conversation actually moves things forward. He knows his stack inside out and more importantly, he knows why it's built the way it is.\nI've been working with him from the Vercel side for the past year and what's always stood out is how he balances day-to-day engineering decisions with a longer view on where the platform needs to go. I highly recommend him.",
+      "author": "Stefan Nikolic",
+      "role": "Account Executive, Vercel"
     }
-  ]
+  ],
+  "imprint": {
+    "title": "Imprint",
+    "backToCV": "Back to CV",
+    "lastUpdated": "Last updated: February 2025",
+    "providerHeading": "Information pursuant to § 5 TMG",
+    "contactLabel": "Contact",
+    "emailLabel": "Email",
+    "sections": [
+      {
+        "heading": "Liability for Content",
+        "paragraphs": [
+          "As a service provider, I am responsible for my own content on these pages in accordance with general laws pursuant to § 7 (1) TMG. According to §§ 8 to 10 TMG, however, I am not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.",
+          "Obligations to remove or block the use of information under general laws remain unaffected. However, liability in this regard is only possible from the point in time at which a concrete infringement of the law becomes known. Upon notification of such violations, I will remove the content immediately."
+        ]
+      },
+      {
+        "heading": "Liability for Links",
+        "paragraphs": [
+          "This site contains links to external websites of third parties, over whose content I have no influence. Therefore, I cannot assume any liability for this external content. The respective provider or operator of the linked pages is always responsible for the content of those pages.",
+          "The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking. However, permanent monitoring of the content of the linked pages is not reasonable without concrete evidence of an infringement."
+        ]
+      },
+      {
+        "heading": "Copyright",
+        "paragraphs": [
+          "The content and works created by the site operator on these pages are subject to copyright law. Duplication, processing, distribution, and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator.",
+          "Downloads and copies of this site are only permitted for private, non-commercial use. Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected."
+        ]
+      },
+      {
+        "heading": "Data Protection",
+        "paragraphs": [
+          "The use of this website is generally possible without providing personal data. This website does not collect, store, or process any personal data beyond what is technically necessary to deliver the page.",
+          "If you contact me via the email address provided, your details will be used solely to process your inquiry and will not be passed on to third parties."
+        ]
+      }
+    ]
+  }
 }

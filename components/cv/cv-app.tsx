@@ -11,6 +11,7 @@ import { SkillsGrid } from "@/components/cv/skills-grid"
 import { EducationList, LanguageList, HobbyList } from "@/components/cv/info-lists"
 import { ContactQR } from "@/components/cv/contact-qr"
 import { Testimonials } from "@/components/cv/testimonials"
+import Link from "next/link"
 
 export function CVApp({ data }: { data: Record<Locale, CVData> }) {
   const [locale, setLocale] = useState<Locale>("en")
@@ -90,6 +91,12 @@ export function CVApp({ data }: { data: Record<Locale, CVData> }) {
             <Testimonials items={cv.testimonials} />
           </Section>
         </div>
+
+        <footer className="mt-8 border-t border-border pt-6 text-center text-sm text-muted-foreground">
+          <Link href="/imprint" className="transition-colors hover:text-foreground">
+            {locale === "de" ? "Impressum" : "Imprint"}
+          </Link>
+        </footer>
       </div>
     </main>
   )
