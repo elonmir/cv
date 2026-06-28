@@ -3,7 +3,7 @@ import { Quote } from "lucide-react"
 
 export function Testimonials({ items }: { items: Testimonial[] }) {
   return (
-    <ul className="grid gap-4 sm:grid-cols-2">
+    <ul className="grid gap-4 sm:grid-cols-2 print:grid-cols-1">
       {items.map((item, i) => (
         <li
           key={i}
