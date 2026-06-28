@@ -120,6 +120,7 @@
   ],
   "imprint": {
     "title": "Imprint",
+    "enable": true,
     "backToCV": "Back to CV",
     "lastUpdated": "Last updated: February 2025",
     "providerHeading": "Information pursuant to § 5 TMG",

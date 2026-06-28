@@ -37,6 +37,7 @@ export interface Imprint {
   contactLabel: string
   emailLabel: string
   sections: ImprintSection[]
+  enable: boolean
 }
 
 export interface Basics {

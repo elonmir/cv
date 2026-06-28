@@ -120,6 +120,7 @@
   ],
   "imprint": {
     "title": "Impressum",
+    "enable": true,
     "backToCV": "Zurück zum Lebenslauf",
     "lastUpdated": "Zuletzt aktualisiert: Februar 2025",
     "providerHeading": "Angaben gemäß § 5 TMG",

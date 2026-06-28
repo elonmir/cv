@@ -63,6 +63,7 @@ export function CVApp({ data }: { data: Record<Locale, CVData> }) {
   ].filter(Boolean)
 
   const hasSidebar = sidebarSections.length > 0
+  const hasImprint = cv.imprint.enable
 
   return (
     <main className="mx-auto max-w-5xl px-4 pb-8 pt-3 sm:px-6 sm:pb-12 sm:pt-4">
@@ -91,12 +92,13 @@ export function CVApp({ data }: { data: Record<Locale, CVData> }) {
             <Testimonials items={cv.testimonials} />
           </Section>
         </div>
-
-        <footer className="mt-8 border-t border-border pt-6 text-center text-sm text-muted-foreground">
-          <Link href="/imprint" className="transition-colors hover:text-foreground">
-            {locale === "de" ? "Impressum" : "Imprint"}
-          </Link>
-        </footer>
+        { hasImprint &&
+          <footer className="mt-8 border-t border-border pt-6 text-center text-sm text-muted-foreground">
+            <Link href="/imprint" className="transition-colors hover:text-foreground">
+              {locale === "de" ? "Impressum" : "Imprint"}
+            </Link>
+          </footer>
+        }
       </div>
     </main>
   )
